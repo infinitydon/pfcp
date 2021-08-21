@@ -1,4 +1,4 @@
-module github.com/free5gc/pfcp
+module github.com/infinitydon/pfcp
 
 go 1.14
 
