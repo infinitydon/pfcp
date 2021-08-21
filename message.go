@@ -1,8 +1,7 @@
 package pfcp
 
 import (
-	"github.com/free5gc/pfcp/pfcpType"
-	"github.com/free5gc/util_3gpp"
+	"github.com/free5gc/pfcp/pfcpType"	
 )
 
 type Message struct {
@@ -209,7 +208,7 @@ type CreatePDR struct {
 type PDI struct {
 	SourceInterface               *pfcpType.SourceInterface               `tlv:"20"`
 	LocalFTEID                    *pfcpType.FTEID                         `tlv:"21"`
-	NetworkInstance               *string                          `tlv:"22"`
+	NetworkInstance               *string                                 `tlv:"22"`
 	UEIPAddress                   *pfcpType.UEIPAddress                   `tlv:"93"`
 	TrafficEndpointID             *pfcpType.TrafficEndpointID             `tlv:"131"`
 	SDFFilter                     *pfcpType.SDFFilter                     `tlv:"23"`
@@ -325,7 +324,7 @@ type CreateBAR struct {
 type CreateTrafficEndpoint struct {
 	TrafficEndpointID             *pfcpType.TrafficEndpointID             `tlv:"131"`
 	LocalFTEID                    *pfcpType.FTEID                         `tlv:"21"`
-	NetworkInstance               *string                          `tlv:"22"`
+	NetworkInstance               *string                                 `tlv:"22"`
 	UEIPAddress                   *pfcpType.UEIPAddress                   `tlv:"93"`
 	EthernetPDUSessionInformation *pfcpType.EthernetPDUSessionInformation `tlv:"142"`
 	FramedRoute                   *pfcpType.FramedRoute                   `tlv:"153"`
